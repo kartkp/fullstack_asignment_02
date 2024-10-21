@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vigneto Website</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729501638/logo_neew-removebg-preview_y2sptl.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Clean white background */
+  padding: 15px 30px; /* More spacious padding */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: 'Helvetica', sans-serif; /* Modern font */
+}
+
+/* Navbar Links */
+.navbar a {
+  text-decoration: none;
+  color: #333333; /* Slightly darker text */
+  padding: 10px 20px; /* Increased padding */
+  font-weight: 500; /* Medium weight for a modern look */
+  font-size: 16px; /* Slightly larger text */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.navbar a:hover {
+  background-color: #f7f7f7;
+  color: #B09B07;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px; 
+  align-items: center;}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+
+ 
+    .header {
+      position: relative;
+      text-align: center;
+      color: white;
+      height: 800px;
+      background: url('https://www.w3schools.com/w3images/architect.jpg') no-repeat center center/cover;
+    }
+
+    .header h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about h3 {
+      border-bottom: 1px solid lightgray;
+      display: inline-block;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      flex-basis: 32%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-card h3 {
+      margin: 10px 0;
+    }
+
+    .project-card p {
+      color: gray;
+    }
+
+    .contact {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .contact button {
+      padding: 12px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #333;
+    }
+
+
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .footer a {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-button {
+      background-color: white;
+      color: #0a2d45;
+      padding: 10px 20px;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #0a2d45;
+      color: white;
+    }
+
+    .hero-box:hover {
+      background-color: rgba(10, 45, 69, 0.95);
+      transition: background-color 0.3s ease;
+    }
+    .about h3 {
+  font-family: 'Frank Ruhl Libre', serif; 
+  font-size: 2.5rem; 
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+.about p {
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 1.1rem; 
+  line-height: 1.6;
+  color: #555; 
+  margin-bottom: 15px;
+}
+
+
+  </style>
+
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">
+    <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729500901/vignetto-wordmark-color_aebxrq.webp" alt="Vigneto" style="width: 200px; height: auto;">
+  </a>
+  
+  
+
+  <div class="navbar-right">
+
+      <a href="#">H O M E</a>
+      <a href="#about">A B O U T</a>
+      <a href="#events">E V E N T S</a>
+      <a href="#contact">C O N T A C T</a>
+
+    <a></a>
+  </div>
+</div>
+
+
+
+<section style="position: relative; display: flex; justify-content: center; align-items: center; background-image: url('https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729501934/Sikkim_n1mlv1.jpg'); background-size: cover; background-position: center; height: 90vh; padding: 50px; z-index: 1;">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: -1;"></div>
+
+  <div style="max-width: 50%; text-align: center;"> <!-- Centered content -->
+    <div class="hero-box" style="background-color: transparent; padding: 30px; border-radius: 8px; color: white;">
+      <b><h3 style="font-size: 1.3rem; font-weight: normal;">V I G N E T O &nbsp; V I N E Y A R D S</h3></b>
+      <h1 style="font-size: 3.8rem; margin: 10px 0; font-family: 'Garamond', serif;">The ultimate food and wine experience</h1>
+      <p style="font-size: 1rem; margin: 10px 0 30px;">Hello Everyone Kartikey this side. I’m a text box. Double click me to edit the text or to change the way I look. You can change the font, size, color, and so much more.</p>
+      <!-- <button class="hero-button">Let's talk</button> -->
+    </div>
+  </div>
+</section>
+
+
+<section class="section about" id="about">
+  <b><h3 style="font-size: 1.3rem; font-weight: normal;font-family: 'Arial', sans-serif; ">W I N E&nbsp; T A S T I N G &nbsp;E X P E R I E N C E</h3></b><br/>
+  <h3 style="font-family: 'Garamond', serif;">About Us</h3>
+  <p>Welcome to our architecture firm, where we believe that design is more than just creating structures; it's about crafting spaces that inspire and enhance the lives of those who inhabit them. Our founder, [Architect's Name], has dedicated over [X years] to the art of architecture, blending innovation with functionality.</p>
+  <p>At [Company Name], we pride ourselves on our collaborative approach. We work closely with our clients to understand their vision and requirements, ensuring that every project reflects their unique style and needs. Our design philosophy revolves around sustainability and resilience, aiming to create buildings that harmonize with their surroundings and stand the test of time.</p>
+  <p>Our portfolio includes a diverse range of projects, from residential homes to commercial spaces and public installations. Each project is a testament to our commitment to quality, creativity, and attention to detail. We are constantly exploring new materials and technologies, pushing the boundaries of traditional architecture to create functional yet aesthetically pleasing designs.</p>
+  <p>Join us on this journey as we continue to explore the intersection of art and architecture, creating spaces that not only serve a purpose but also evoke emotion and connect people.</p>
+</section>
+
+
+
+<section class="section" id="projects">
+  <h3>Projects</h3>
+  <div class="projects">
+    <div class="project-card">
+      <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+      <h3>Summer Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+      <h3>Brick Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
+      <h3>Renovated Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+      <h3>Brick Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities.</p>
+    </div>
+        <div class="project-card">
+      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
+      <h3>Renovated Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
+    </div>
+        <div class="project-card">
+      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
+      <h3>Renovated Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
+    </div>
+  </div>
+</section>
+
+<section style="display: flex; justify-content: center; align-items: center; background-image: url('https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506369/background_j19jhu.jpg'); background-size: cover; background-position: center; height: 90vh; padding: 50px;">
+  <div style="max-width: 80%; display: flex; justify-content: space-between; gap: 20px;">
+    
+    <div class="project-card" style="flex: 1; background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House" style="width: 100%; height: auto; border-radius: 10px;">
+      <h3>Renovated Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
+    </div>
+
+    <div class="project-card" style="flex: 1; background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" style="width: 100%; height: auto; border-radius: 10px;">
+      <h3>Brick Office</h3>
+      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="contact" id="contact">
+  <h3>Contact</h3>
+  <p>If you would like to reach out, please fill out the form below.</p>
+  <form action="/submit_contact.php" method="POST" target="_blank">
+    <input type="text" placeholder="Name" required name="Name">
+    <input type="email" placeholder="Email" required name="Email">
+    <input type="text" placeholder="Subject" required name="Subject">
+    <textarea placeholder="Message" required name="Message" rows="4"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<footer class="footer">
+  <p>Footer Added!!</a></p>
+</footer>
+
+</body>
+</html>
