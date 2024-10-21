@@ -12,29 +12,28 @@
       padding: 0;
     }
 
-/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff; /* Clean white background */
-  padding: 15px 30px; /* More spacious padding */
+  background-color: #ffffff;
+  padding: 15px 30px; 
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  font-family: 'Helvetica', sans-serif; /* Modern font */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  font-family: 'Helvetica', sans-serif; 
 }
 
-/* Navbar Links */
+
 .navbar a {
   text-decoration: none;
-  color: #333333; /* Slightly darker text */
-  padding: 10px 20px; /* Increased padding */
-  font-weight: 500; /* Medium weight for a modern look */
-  font-size: 16px; /* Slightly larger text */
-  transition: all 0.3s ease; /* Smooth transition */
+  color: #333333;
+  padding: 10px 20px;
+  font-weight: 500; 
+  font-size: 16px; 
+  transition: all 0.3s ease;
 }
 
 .navbar a:hover {
@@ -204,6 +203,167 @@
       background-color: #0a2d45;
       color: white;
     }
+    .left-paragraph {
+      text-align: right;
+            width: 45%;
+            float: left;
+        }
+
+        .right-paragraph {
+
+            text-align: left;
+            width: 45%;
+            float: right;
+            margin-right: 0%;
+            margin-left: 20000%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .event-banner {
+    background-image: url("https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729521710/photo-1544143086-828f66ac3945_ulqdh5.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .event-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .event-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin-left: 200px;
+    text-align: left;
+  }
+  
+  .event-content h4 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .event-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .event-button {
+    background-color: #fcfcfc;
+    color: rgb(225, 202, 32);
+    padding: 10px 20px;
+    border: none;
+  
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .event-button:hover {
+    background-color: #e6c200;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .event-banner {
+      height: 350px;
+    }
+  
+    .event-content {
+      margin-left: 20px;
+    }
+  
+    .event-content h1 {
+      font-size: 32px;
+    }
+  
+    .event-content h4 {
+      font-size: 18px;
+    }
+  
+    .event-button {
+      font-size: 16px;
+    }
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin-left: 100px;
+  }
+  
+  .about-heading {
+    flex: 1;
+  }
+  
+  .about-heading h6 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #c2a43a;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .about-heading h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.2;
+  }
+  
+  .about-text {
+    margin-left: 200px;
+    flex: 1;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+    }
+  
+    .about-heading h1 {
+      font-size: 32px;
+    }
+  
+    .about-text p {
+      font-size: 16px;
+    }
+  }
 
     .hero-box:hover {
       background-color: rgba(10, 45, 69, 0.95);
@@ -223,6 +383,101 @@
   color: #555; 
   margin-bottom: 15px;
 }
+.adventure-section {
+    background-image: url("https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729521496/jpg_phnjjj.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .adventure-section h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .adventure-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+  footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    margin-left: 1px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .footer-nav a:hover {
+    color: #dda311;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #fff;
+  }
 
 
   </style>
@@ -253,7 +508,7 @@
 <section style="position: relative; display: flex; justify-content: center; align-items: center; background-image: url('https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729501934/Sikkim_n1mlv1.jpg'); background-size: cover; background-position: center; height: 90vh; padding: 50px; z-index: 1;">
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: -1;"></div>
 
-  <div style="max-width: 50%; text-align: center;"> <!-- Centered content -->
+  <div style="max-width: 50%; text-align: center;">
     <div class="hero-box" style="background-color: transparent; padding: 30px; border-radius: 8px; color: white;">
       <b><h3 style="font-size: 1.3rem; font-weight: normal;">V I G N E T O &nbsp; V I N E Y A R D S</h3></b>
       <h1 style="font-size: 3.8rem; margin: 10px 0; font-family: 'Garamond', serif;">The ultimate food and wine experience</h1>
@@ -266,88 +521,108 @@
 
 <section class="section about" id="about">
   <b><h3 style="font-size: 1.3rem; font-weight: normal;font-family: 'Arial', sans-serif; ">W I N E&nbsp; T A S T I N G &nbsp;E X P E R I E N C E</h3></b><br/>
-  <h3 style="font-family: 'Garamond', serif;">About Us</h3>
-  <p>Welcome to our architecture firm, where we believe that design is more than just creating structures; it's about crafting spaces that inspire and enhance the lives of those who inhabit them. Our founder, [Architect's Name], has dedicated over [X years] to the art of architecture, blending innovation with functionality.</p>
-  <p>At [Company Name], we pride ourselves on our collaborative approach. We work closely with our clients to understand their vision and requirements, ensuring that every project reflects their unique style and needs. Our design philosophy revolves around sustainability and resilience, aiming to create buildings that harmonize with their surroundings and stand the test of time.</p>
-  <p>Our portfolio includes a diverse range of projects, from residential homes to commercial spaces and public installations. Each project is a testament to our commitment to quality, creativity, and attention to detail. We are constantly exploring new materials and technologies, pushing the boundaries of traditional architecture to create functional yet aesthetically pleasing designs.</p>
-  <p>Join us on this journey as we continue to explore the intersection of art and architecture, creating spaces that not only serve a purpose but also evoke emotion and connect people.</p>
-</section>
+  <h3 style="font-family: 'Garamond', serif; color: #B09A08;font-size: 2.9rem;">Every Empty Bottle Is Filled With A Great Story</h3>
+<br></br><br/>
 
+  <div class="clearfix">
+    <p class="left-paragraph">
+        I'm a text box. Double click me to edit the text or change the way I look. You <br/>can change the font, size, color, and so much more. For advanced styling options, click on “more” located on the right-hand side of the text editing menu.<br/> Click once to move me or to bring up the resize handles and Squeegee Tool.
+    </p>
 
-
-<section class="section" id="projects">
-  <h3>Projects</h3>
-  <div class="projects">
-    <div class="project-card">
-      <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
-      <h3>Summer Office</h3>
-      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
-    </div>
-    <div class="project-card">
-      <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
-      <h3>Brick Office</h3>
-      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
-    </div>
-    <div class="project-card">
-      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
-      <h3>Renovated Office</h3>
-      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
-    </div>
-    <div class="project-card">
-      <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
-      <h3>Brick Office</h3>
-      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities.</p>
-    </div>
-        <div class="project-card">
-      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
-      <h3>Renovated Office</h3>
-      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
-    </div>
-        <div class="project-card">
-      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House">
-      <h3>Renovated Office</h3>
-      <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
-    </div>
+    <p class="right-paragraph">
+        The resize handles allow you to make me any size you want. The Squeegee Tool, located in the top left of any selected object, helps you move all objects below it up or down to create or remove space.
+    </p>
+</div><br/><br/>
+<div class="event-banner">
+  <div class="event-content">
+    <h4>MONTEPULCIANO,&nbsp;ITALY</h4>
+    <h1 style="font-family: 'Garamond', serif;">Wine Pairs Nicely With Good Friends</h1>
+    <button class="event-button">Upcoming Events</button>
   </div>
+</div>
+
+<div class="about-section">
+  <div class="about-heading">
+    <h6>ABOUT</h6>
+    <h1 style="font-family: 'Garamond', serif;">Adventure Is The Best Way To Learn Something New</h1>
+  </div><br/><br/>
+  <div class="about-text">
+    <p>
+      I’m a text box. Double click me to edit the text or to change the way
+      I look. You can change the font, size, color, and so much more. For
+      advanced styling options, click on “more” located on the right hand
+      side of the text editing menu.
+    </p>
+    <p>
+      Click once to move me or to bring up the resize handles and Squeegee
+      Tool. The resize handles allow you to make me any size you want.
+    </p>
+    <p>
+      I’m a text box. Double click me to edit the text or to change the way
+      I look. You can change the font, size, color, and so much more.
+    </p>
+  </div>
+</div>
 </section>
+<div class="adventure-section">
+  <h1 style="font-family: 'Garamond', serif;">A New Adventure Is Waiting For You</h1>
+</div><br/>
+<div class="event-banner">
+  <div class="event-content">
+    <h4>MONTEPULCIANO,&nbsp;ITALY</h4>
+    <h1 style="font-family: 'Garamond', serif;">Book Your Next Adventure</h1>
+    <h5>I’m a text box. Double click me to edit the text or to change the way I look.</h5>
+    <button class="event-button">Book Events</button>
+  </div>
+</div><br/>
 
 <section style="display: flex; justify-content: center; align-items: center; background-image: url('https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506369/background_j19jhu.jpg'); background-size: cover; background-position: center; height: 90vh; padding: 50px;">
   <div style="max-width: 80%; display: flex; justify-content: space-between; gap: 20px;">
     
     <div class="project-card" style="flex: 1; background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House" style="width: 100%; height: auto; border-radius: 10px;">
-      <h3>Renovated Office</h3>
+      <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729523082/Screenshot_2024-10-21_203404_lybu5x.png" alt="Renovated House" style="width: 100%; height: auto; border-radius: 10px;">
+      <h3>Visit Wine Country</h3>
       <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities or uses.</p>
-    </div>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     <div class="project-card" style="flex: 1; background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-      <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House" style="width: 100%; height: auto; border-radius: 10px;">
-      <h3>Brick Office</h3>
+      <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729523107/Screenshot_2024-10-21_203354_eh458s.png" alt="Brick House" style="width: 100%; height: auto; border-radius: 10px;">
+      <h3>Wine Events</h3>
       <p>Welcome to the website. If you're here, you're likely looking to find random words. Random Word Generator is the perfect tool to help you do this. While this tool isn't a word creator, it is a word generator that will generate random words for a variety of activities.</p>
     </div>
 
   </div>
 </section>
 
+<footer>
+  <div class="footer-container">
+    <p style="font-family: 'Garamond', serif;">© Made By KARTIKEY PANDEY</p>
 
+    <div class="logo">
+      <img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1729522477/vignetto-wordmark-white-2_wct1cw.webp" alt="Vigneto Logo" />
+    </div>
 
+    <div class="footer-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Events</a>
+      <a href="#">Contact</a>
+    </div>
 
-<section class="contact" id="contact">
-  <h3>Contact</h3>
-  <p>If you would like to reach out, please fill out the form below.</p>
-  <form action="/submit_contact.php" method="POST" target="_blank">
-    <input type="text" placeholder="Name" required name="Name">
-    <input type="email" placeholder="Email" required name="Email">
-    <input type="text" placeholder="Subject" required name="Subject">
-    <textarea placeholder="Message" required name="Message" rows="4"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+    <div class="social-icons">
+      <a href="#"><img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1728741966/Screenshot_2024-10-12_193512-removebg-preview_oqhunv.png" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/in/kartkp/"><img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1721506379/linkedd_wymap6.png" alt="Linkedin" /></a>
+      <a href="#"><img src="https://res.cloudinary.com/dnsjdvzdn/image/upload/v1728738872/Screenshot_2024-10-12_184307-removebg-preview_eqazu1.png" alt="X" /></a>
+    </div>
+  </div>
 
-
-<footer class="footer">
-  <p>Footer Added!!</a></p>
+  <div class="footer-bottom">
+    <p>&copy; Your business name, all rights reserved.</p>
+    <p>Crafted lovingly with <a href="#">PageCloud</a></p>
+    
+  </div>
 </footer>
+
 
 </body>
 </html>
